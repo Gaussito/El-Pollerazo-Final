@@ -1,0 +1,181 @@
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Menú | El Pollerazo</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>¿Qué quieres pedir?</h1>
+
+<input
+id="buscador"
+class="buscar"
+placeholder="Buscar platos..."
+onkeyup="buscarPlatos()">
+
+</div>
+
+
+<section class="seccion">
+
+<div class="categorias">
+
+<div class="categoria"
+onclick="abrirCatalogo('tipicos')">
+
+🍲
+<p>Típicos</p>
+
+</div>
+
+
+<div class="categoria"
+onclick="abrirCatalogo('platos')">
+
+🍗
+<p>Platos</p>
+
+</div>
+
+
+<div class="categoria"
+onclick="abrirCatalogo('bebidas')">
+
+🥤
+<p>Bebidas</p>
+
+</div>
+
+
+<div class="categoria">
+
+🎮
+<p>Entretenimiento</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="seccion">
+
+<div class="titulo">
+
+<h2>Típicos</h2>
+
+<p onclick="abrirCatalogo('tipicos')">
+
+Ver todos
+
+</p>
+
+</div>
+
+<div
+class="cards-scroll"
+id="tipicos">
+
+</div>
+
+</section>
+
+
+
+
+<section class="seccion">
+
+<div class="titulo">
+
+<h2>Platos</h2>
+
+<p onclick="abrirCatalogo('platos')">
+
+Ver todos
+
+</p>
+
+</div>
+
+<div
+class="cards-scroll"
+id="platos">
+
+</div>
+
+</section>
+
+
+
+
+<section class="seccion">
+
+<div class="titulo">
+
+<h2>Bebidas</h2>
+
+<p onclick="abrirCatalogo('bebidas')">
+
+Ver todos
+
+</p>
+
+</div>
+
+<div
+class="cards-scroll"
+id="bebidas">
+
+</div>
+
+</section>
+
+
+
+<div class="nav">
+
+<a href="index.html">
+
+🏠<br>
+Inicio
+
+</a>
+
+<a href="menu.html">
+
+🍗<br>
+Menú
+
+</a>
+
+<a href="carrito.html">
+
+🛒<br>
+Carrito
+
+</a>
+
+<a href="perfil.html">
+
+👤<br>
+Perfil
+
+</a>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
